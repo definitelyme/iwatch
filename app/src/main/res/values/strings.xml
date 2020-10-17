@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MediPlan</string>
+    <string name="sign_up_string">Sign Up</string>
 </resources>
