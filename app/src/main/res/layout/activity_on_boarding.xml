@@ -7,6 +7,8 @@
     tools:context="org.health17.iwatch.OnBoardingActivity">
 
     <com.google.android.material.button.MaterialButton
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
         android:id="@+id/btn_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,6 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.viewpager.widget.ViewPager
+
         android:id="@+id/vp_on_boarding"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -40,6 +43,10 @@
 
 
         <com.google.android.material.button.MaterialButton
+            android:onClick="skip"
+            android:textStyle="bold"
+            app:cornerRadius="8dp"
+            android:layout_margin="16dp"
             android:visibility="invisible"
             android:id="@+id/btn_get_started"
             android:background="@color/colorPrimaryDark"
@@ -60,6 +67,9 @@
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
+            android:text="Next"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:onClick="next"
             android:drawableEnd="@drawable/ic_baseline_fast_forward_24"
             android:background="#00000000"
