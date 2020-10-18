@@ -21,16 +21,16 @@ class SliderAdapter(private val context: Context) : PagerAdapter() {
 
     private val headings = arrayOf(
         context.getString(R.string.on_boarding_heading_1),
-        "A whole team of doctors at your disposal",
-        "Knowldege is power",
-       "Buys Meds Online"
+        context.getString(R.string.on_boarding_heading_2),
+        context.getString(R.string.on_boarding_heading_3),
+       context.getString(R.string.on_boarding_heading_4)
     )
 
     private val descriptions = arrayOf(
         context.getString(R.string.on_boarding_description_1),
-        "Mediplan gives you the opportunity to get free consultation from research done by a big team of qualified doctors",
-        "With the correct information regarding your problem you can protect yourself against major diseases",
-        "With a number of pharmacy also available you can order your prescriptions directly from the app"
+        context.getString(R.string.on_boarding_description_2),
+        context.getString(R.string.on_boarding_description_3),
+        context.getString(R.string.on_boarding_description_4)
     )
 
     override fun getCount(): Int {
@@ -49,8 +49,8 @@ class SliderAdapter(private val context: Context) : PagerAdapter() {
         val txtDescription = layoutInflater.findViewById<TextView>(R.id.txt_slider_description)
 
         imageView.setImageResource(images[position])
-        textTitle.setText(headings[position])
-        txtDescription.setText(descriptions[position])
+        textTitle.text = headings[position]
+        txtDescription.text = descriptions[position]
 
         container.addView(layoutInflater)
 

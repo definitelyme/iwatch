@@ -15,7 +15,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_doc_pills" />
+        app:srcCompat="@drawable/ic_doc_pills"
+        android:contentDescription="@string/onboarding_image" />
 
     <com.google.android.material.textview.MaterialTextView
         android:textColor="@android:color/black"

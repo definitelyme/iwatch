@@ -16,7 +16,7 @@
         android:drawableEnd="@drawable/ic_baseline_skip_next_24"
         android:onClick="skip"
         android:padding="12dp"
-        android:text="Skip"
+        android:text="@string/skip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,7 +50,7 @@
             android:visibility="invisible"
             android:id="@+id/btn_get_started"
             android:background="@color/colorPrimaryDark"
-            android:text="Get Started"
+            android:text="@string/get_started"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -67,7 +67,7 @@
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:text="Next"
+            android:text="@string/next"
             android:textStyle="bold"
             android:textColor="@android:color/black"
             android:onClick="next"

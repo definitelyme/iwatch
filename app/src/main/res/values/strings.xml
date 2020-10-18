@@ -2,4 +2,14 @@
     <string name="app_name">MediPlan</string>
     <string name="on_boarding_heading_1">Be on time and on track</string>
     <string name="on_boarding_description_1">With mediplan app get a chance to plan your pill taking schedule and ensure you are both on time and never miss your prescriptions</string>
+    <string name="on_boarding_heading_2">A whole team of doctors at your disposal</string>
+    <string name="on_boarding_heading_3">Knowldege is power</string>
+    <string name="on_boarding_heading_4">Buys Meds Online</string>
+    <string name="on_boarding_description_2">Mediplan gives you the opportunity to get free consultation from research done by a big team of qualified doctors</string>
+    <string name="on_boarding_description_3">With the correct information regarding your problem you can protect yourself against major diseases</string>
+    <string name="on_boarding_description_4">With a number of pharmacy also available you can order your prescriptions directly from the app</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get Started</string>
+    <string name="next">Next</string>
+    <string name="onboarding_image">OnBoarding Image</string>
 </resources>
