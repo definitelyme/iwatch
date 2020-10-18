@@ -43,6 +43,10 @@
     <dimen name="dimen_23">23dp</dimen>
     <dimen name="dimen_24">24dp</dimen>
     <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_26">26dp</dimen>
+    <dimen name="dimen_27">27dp</dimen>
+    <dimen name="dimen_28">28dp</dimen>
+    <dimen name="dimen_29">29dp</dimen>
     <dimen name="dimen_30">30dp</dimen>
     <dimen name="dimen_35">35dp</dimen>
     <dimen name="dimen_36">36dp</dimen>
@@ -121,10 +125,7 @@
     <dimen name="font_30">30sp</dimen>
 
     <dimen name="dimen_32">32dp</dimen>
-    <dimen name="dimen_28">28dp</dimen>
-    <dimen name="dimen_27">27dp</dimen>
     <dimen name="dimen_57">57dp</dimen>
-    <dimen name="dimen_26">26dp</dimen>
     <dimen name="dimen_5">5dp</dimen>
     <dimen name="dimen_56">56dp</dimen>
     <dimen name="dimen_3">3dp</dimen>

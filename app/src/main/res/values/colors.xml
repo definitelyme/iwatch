@@ -5,4 +5,9 @@
     <color name="colorPrimaryDark">#005ec7</color>
     <color name="colorAccent">#FFC04F</color>
     <color name="colorAccentSecondary">#FCD69A</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="darker_gray">@android:color/darker_gray</color>
+    <color name="facebook">#1976D2</color>
 </resources>
