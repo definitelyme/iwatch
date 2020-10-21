@@ -69,12 +69,12 @@
                 android:cursorVisible="true"
                 android:inputType="text"
                 android:padding="20dp"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:cursorColor="@color/colorPrimaryDark"
+                app:cursorColor="@color/colorPrimary"
                 app:cursorWidth="2dp"
-                app:lineColor="@color/colorPrimaryDark"
+                app:lineColor="@color/colorPrimary"
                 app:lineWidth="1dp"
                 app:viewType="rectangle" />
 
