@@ -21,10 +21,14 @@
         </activity>
 
         <activity android:name=".MainActivity" />
-
         <activity android:name=".LoginActivity" />
-
         <activity android:name=".SignUpActivity" />
+        <activity
+            android:name=".VerificationActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".PasswordResetActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
