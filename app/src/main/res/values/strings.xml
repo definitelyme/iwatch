@@ -15,6 +15,7 @@
     
     <!-- Auth String [START] -->
     <string name="sign_up_string">Sign Up</string>
+    <string name="sign_up____string">New here? Sign Up</string>
     <string name="sign_in_string">Sign In</string>
     <string name="log_in_string">Log In</string>
     <string name="create_free_account_string">Create a free account</string>

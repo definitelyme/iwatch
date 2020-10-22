@@ -18,7 +18,6 @@
 
             <Button
                 android:id="@+id/navigate_signin_button_id"
-                style="?attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button_transparent_rounded_corners"
@@ -27,7 +26,6 @@
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="@dimen/font_18"
-                android:textStyle="bold"
                 android:tooltipText="@string/have_an_account_string"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -56,8 +54,8 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/font_25"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@id/left_guideline"
-                app:layout_constraintBottom_toTopOf="@id/name_constraintLayout" />
+                app:layout_constraintBottom_toTopOf="@id/name_constraintLayout"
+                app:layout_constraintStart_toStartOf="@id/left_guideline" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/name_constraintLayout"
@@ -254,6 +252,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/dimen_30"
                 android:background="@drawable/button_right_rounded_corners"
+                android:elevation="@dimen/dimen_0"
                 android:freezesText="true"
                 android:text="@string/sign_up_string"
                 android:textAllCaps="false"
