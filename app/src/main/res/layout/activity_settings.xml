@@ -94,6 +94,7 @@
 
             android:drawableTint="#005ec7"
             android:text="Process Analytics"
+            android:textColor="@color/black"
             android:drawableRight="@drawable/arrow_right_24"
             android:drawablePadding="@dimen/dimen_39"
             android:textSize="27sp" />
@@ -113,6 +114,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:drawableRight="@drawable/arrow_right_24"
             android:drawablePadding="@dimen/dimen_39"
             android:drawableTintMode="add"
@@ -136,6 +138,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:drawableRight="@drawable/arrow_right_24"
             android:drawablePadding="@dimen/dimen_39"
             android:drawableTintMode="add"
@@ -159,6 +162,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:layout_gravity="left"
             android:drawableTintMode="add"
             android:drawableTint="#005ec7"
@@ -181,6 +185,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:drawableTintMode="add"
             android:drawableTint="#005ec7"
             android:drawableRight="@drawable/arrow_right_24"
