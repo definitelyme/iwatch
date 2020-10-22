@@ -154,7 +154,7 @@
                 android:src="@drawable/arrow_right_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.719"
+                app:layout_constraintHorizontal_bias="0.829"
                 app:layout_constraintStart_toEndOf="@+id/activText" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -197,7 +197,7 @@
                 android:src="@drawable/arrow_right_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.719"
+                app:layout_constraintHorizontal_bias="0.867"
                 app:layout_constraintStart_toEndOf="@+id/personal" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -281,7 +281,7 @@
                 android:src="@drawable/arrow_right_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.719"
+                app:layout_constraintHorizontal_bias="0.873"
                 app:layout_constraintStart_toEndOf="@+id/notifications" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
