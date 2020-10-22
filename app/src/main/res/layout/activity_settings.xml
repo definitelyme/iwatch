@@ -53,4 +53,27 @@
             android:background="?android:attr/windowBackground">
         </FrameLayout>
     </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintTop_toBottomOf="@id/settingsToolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="8dp"
+        android:contentDescription="Profile" />
+
+    <TextView
+        android:id="@+id/profileName"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintLeft_toRightOf="@id/profileImage"
+        app:layout_constraintTop_toTopOf="@id/profileImage"
+        tools:text="Hi, User1" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
