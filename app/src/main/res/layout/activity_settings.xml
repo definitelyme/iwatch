@@ -77,6 +77,7 @@
         tools:text="Hi, User1" />
 
     <com.google.android.material.card.MaterialCardView
+        android:background="#ffffff"
         android:id="@+id/card1"
         android:layout_width="289dp"
         android:layout_height="49dp"
@@ -88,13 +89,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_gravity="left"
+            android:drawableTintMode="add"
+
+            android:drawableTint="#005ec7"
             android:text="Process Analytics"
+            android:drawableRight="@drawable/arrow_right_24"
+            android:drawablePadding="@dimen/dimen_39"
             android:textSize="27sp" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
+        android:background="#ffffff"
         android:id="@+id/card2"
         android:layout_width="296dp"
         android:layout_height="50dp"
@@ -107,13 +113,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:drawableRight="@drawable/arrow_right_24"
+            android:drawablePadding="@dimen/dimen_39"
+            android:drawableTintMode="add"
+            android:drawableTint="#005ec7"
             android:layout_gravity="left"
             android:text="Activity Tracker"
             android:textSize="27sp" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
+        android:background="#ffffff"
         android:id="@+id/card3"
         android:layout_width="294dp"
         android:layout_height="51dp"
@@ -126,6 +136,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableRight="@drawable/arrow_right_24"
+            android:drawablePadding="@dimen/dimen_39"
+            android:drawableTintMode="add"
+            android:drawableTint="#005ec7"
 
             android:layout_gravity="left"
             android:text="Personal Info "
@@ -133,6 +147,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
+        android:background="#ffffff"
         android:id="@+id/card4"
         android:layout_width="294dp"
         android:layout_height="49dp"
@@ -145,11 +160,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
+            android:drawableTintMode="add"
+            android:drawableTint="#005ec7"
+            android:drawableRight="@drawable/arrow_right_24"
+            android:drawablePadding="@dimen/dimen_39"
             android:text="Family Integration"
             android:textSize="27sp" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
+        android:background="#ffffff"
         android:id="@+id/card5"
         android:layout_width="294dp"
         android:layout_height="46dp"
@@ -161,6 +181,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableTintMode="add"
+            android:drawableTint="#005ec7"
+            android:drawableRight="@drawable/arrow_right_24"
+            android:drawablePadding="@dimen/dimen_39"
             android:layout_gravity="left"
             android:text="Notifications"
             android:textSize="27sp" />
