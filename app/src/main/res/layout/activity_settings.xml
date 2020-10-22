@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#dbeaff"
+    android:background="#f7f2fc"
     tools:context=".Settings">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -77,7 +77,7 @@
         tools:text="Hi, User1" />
 
     <com.google.android.material.card.MaterialCardView
-        android:background="#ffffff"
+        android:background="@drawable/settings_rounded"
         android:id="@+id/card1"
         android:layout_width="289dp"
         android:layout_height="49dp"
@@ -87,21 +87,22 @@
         app:layout_constraintTop_toBottomOf="@+id/profileName">
 
         <TextView
+            android:layout_marginLeft="8dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="left"
-            android:drawableTintMode="add"
+            android:drawableRight="@drawable/arrow_right_24"
 
+            android:drawablePadding="@dimen/dimen_39"
             android:drawableTint="#005ec7"
+            android:drawableTintMode="add"
             android:text="Process Analytics"
             android:textColor="@color/black"
-            android:drawableRight="@drawable/arrow_right_24"
-            android:drawablePadding="@dimen/dimen_39"
             android:textSize="27sp" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:background="#ffffff"
+        android:background="@drawable/settings_rounded"
         android:id="@+id/card2"
         android:layout_width="296dp"
         android:layout_height="50dp"
@@ -112,6 +113,7 @@
         app:layout_constraintTop_toBottomOf="@+id/card1">
 
         <TextView
+            android:layout_marginLeft="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -125,7 +127,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:background="#ffffff"
+        android:background="@drawable/settings_rounded"
         android:id="@+id/card3"
         android:layout_width="294dp"
         android:layout_height="51dp"
@@ -136,6 +138,7 @@
         app:layout_constraintTop_toBottomOf="@+id/card2">
 
         <TextView
+            android:layout_marginLeft="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -150,7 +153,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:background="#ffffff"
+        android:background="@drawable/settings_rounded"
         android:id="@+id/card4"
         android:layout_width="294dp"
         android:layout_height="49dp"
@@ -160,6 +163,7 @@
         app:layout_constraintTop_toBottomOf="@+id/card3">
 
         <TextView
+            android:layout_marginLeft="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -173,7 +177,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:background="#ffffff"
+        android:background="@drawable/settings_rounded"
         android:id="@+id/card5"
         android:layout_width="294dp"
         android:layout_height="46dp"
@@ -183,6 +187,7 @@
         app:layout_constraintTop_toBottomOf="@+id/card4">
 
         <TextView
+            android:layout_marginLeft="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
