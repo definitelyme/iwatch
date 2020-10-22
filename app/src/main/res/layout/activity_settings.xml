@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#dbeaff"
     tools:context=".Settings">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -87,7 +88,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+
+            android:layout_gravity="left"
             android:text="Process Analytics"
             android:textSize="27sp" />
     </com.google.android.material.card.MaterialCardView>
@@ -105,7 +107,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+
+            android:layout_gravity="left"
             android:text="Activity Tracker"
             android:textSize="27sp" />
     </com.google.android.material.card.MaterialCardView>
@@ -123,7 +126,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+
+            android:layout_gravity="left"
             android:text="Personal Info "
             android:textSize="27sp" />
     </com.google.android.material.card.MaterialCardView>
@@ -140,7 +144,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="left"
             android:text="Family Integration"
             android:textSize="27sp" />
     </com.google.android.material.card.MaterialCardView>
@@ -157,7 +161,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="left"
             android:text="Notifications"
             android:textSize="27sp" />
     </com.google.android.material.card.MaterialCardView>
