@@ -135,4 +135,5 @@
     <dimen name="dimen_42">42dp</dimen>
     <dimen name="dimen_9">9dp</dimen>
     <dimen name="dimen_48">48dp</dimen>
+    <dimen name="dimen_49">49dp</dimen>
 </resources>

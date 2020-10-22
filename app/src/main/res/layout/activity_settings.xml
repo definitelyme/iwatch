@@ -92,13 +92,12 @@
             android:layout_height="match_parent"
             android:layout_gravity="left"
             android:drawableRight="@drawable/arrow_right_24"
-
             android:drawablePadding="@dimen/dimen_39"
             android:drawableTint="#005ec7"
             android:drawableTintMode="add"
-            android:text="Process Analytics"
+            android:text="Progress Analytics"
             android:textColor="@color/black"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -118,12 +117,12 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:drawableRight="@drawable/arrow_right_24"
-            android:drawablePadding="@dimen/dimen_39"
+            android:drawablePadding="@dimen/dimen_75"
             android:drawableTintMode="add"
             android:drawableTint="#005ec7"
             android:layout_gravity="left"
             android:text="Activity Tracker"
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -143,13 +142,13 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:drawableRight="@drawable/arrow_right_24"
-            android:drawablePadding="@dimen/dimen_39"
+            android:drawablePadding="@dimen/dimen_85"
             android:drawableTintMode="add"
             android:drawableTint="#005ec7"
 
             android:layout_gravity="left"
             android:text="Personal Info "
-            android:textSize="27sp" />
+            android:textSize="25sp" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -163,17 +162,16 @@
         app:layout_constraintTop_toBottomOf="@+id/card3">
 
         <TextView
-            android:layout_marginLeft="8dp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:layout_gravity="left"
-            android:drawableTintMode="add"
+            android:layout_marginLeft="8dp"
             android:drawableTint="#005ec7"
-            android:drawableRight="@drawable/arrow_right_24"
-            android:drawablePadding="@dimen/dimen_39"
+            android:drawableTintMode="add"
             android:text="Family Integration"
-            android:textSize="27sp" />
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:drawableRightCompat="@drawable/arrow_right_24" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -187,16 +185,16 @@
         app:layout_constraintTop_toBottomOf="@+id/card4">
 
         <TextView
-            android:layout_marginLeft="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:drawableTintMode="add"
-            android:drawableTint="#005ec7"
-            android:drawableRight="@drawable/arrow_right_24"
-            android:drawablePadding="@dimen/dimen_39"
             android:layout_gravity="left"
+            android:layout_marginLeft="8dp"
+            android:drawableRight="@drawable/arrow_right_24"
+            android:drawablePadding="@dimen/dimen_80"
+            android:drawableTint="#005ec7"
+            android:drawableTintMode="add"
             android:text="Notifications"
+            android:textColor="@color/black"
             android:textSize="27sp" />
     </com.google.android.material.card.MaterialCardView>
 
