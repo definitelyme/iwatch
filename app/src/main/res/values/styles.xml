@@ -18,11 +18,6 @@
 
     </style>
 
-    <!-- ############ Others ########### -->
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
     <!-- Material Theme -->
     <style name="MaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
 
@@ -54,5 +49,10 @@
         <item name="windowNoTitle">true</item>
 
     </style>
+
+    <!-- ############ Others ########### -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
