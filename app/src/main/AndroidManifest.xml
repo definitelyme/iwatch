@@ -21,13 +21,21 @@
 
         <activity android:name=".MainActivity" />
 
-        <activity android:name=".LoginActivity" />
-      
-        <activity android:name=".SignUpActivity" />
-      
-        <activity android:name=".VerificationActivity" />
-      
-        <activity android:name=".PasswordResetActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/FullScreenWithStatusBar" />
+
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/FullScreenWithStatusBar" />
+
+        <activity
+            android:name=".VerificationActivity"
+            android:theme="@style/FullScreenWithStatusBar" />
+
+        <activity
+            android:name=".PasswordResetActivity"
+            android:theme="@style/FullScreenWithStatusBar" />
     </application>
 
 </manifest>

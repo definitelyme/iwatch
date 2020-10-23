@@ -13,17 +13,12 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         navigate_signup_button_id.setOnClickListener {
-            val intent = Intent(this, SignUpActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, SignUpActivity::class.java))
             finish()
         }
 
         login_button_id.setOnClickListener {
             Log.d("TAG", "onCreate: Login as returning User")
-        }
-
-        sign_in_forgotPassword_id.setOnClickListener {
-            Log.d("TAG", "onCreate: OK! I'm gonna help you thru the process")
         }
 
         facebook_signin_button_id.setOnClickListener {
@@ -35,8 +30,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         sign_in_forgotPassword_id.setOnClickListener {
-            val intent = Intent(this, PasswordResetActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, PasswordResetActivity::class.java))
         }
     }
 }
