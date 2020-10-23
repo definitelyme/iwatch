@@ -7,7 +7,9 @@
     <color name="colorAccentSecondary">#FCD69A</color>
     <color name="transparent">@android:color/transparent</color>
     <color name="white">@android:color/white</color>
-    <color name="black">@android:color/black</color>
+    <color name="white70">#CDFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black70">#C9000000</color>
     <color name="darker_gray">@android:color/darker_gray</color>
     <color name="facebook">#1976D2</color>
 </resources>

@@ -1,43 +1,58 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Default Application Theme (Extend this theme to create any custom themes) -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="windowActionBar">false</item>
 
-        <item name="android:statusBarColor">@color/darker_gray</item>
+        <item name="windowActionBar">false</item>
 
         <item name="android:windowAllowEnterTransitionOverlap">true</item>
         <item name="android:windowAllowReturnTransitionOverlap">true</item>
 
         <!-- This kinda acts like a SafeArea Widget for Native Android -->
         <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
-
         <!-- Updates to the new font -->
         <item name="android:fontFamily">@font/mont_regular</item>
 
     </style>
 
+    <!-- ############ Others ########### -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
     <!-- Material Theme -->
     <style name="MaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="windowActionBar">false</item>
 
-        <item name="android:statusBarColor">@color/darker_gray</item>
+        <item name="windowActionBar">false</item>
 
         <item name="android:windowAllowEnterTransitionOverlap">true</item>
         <item name="android:windowAllowReturnTransitionOverlap">true</item>
 
         <!-- This kinda acts like a SafeArea for Native Android -->
         <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
+        <!-- Updates to the new font -->
+        <item name="android:fontFamily">@font/mont_regular</item>
+
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
+    <style name="FullScreenWithStatusBar" parent="AppTheme">
+
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+
         <item name="windowNoTitle">true</item>
+
     </style>
 
 </resources>

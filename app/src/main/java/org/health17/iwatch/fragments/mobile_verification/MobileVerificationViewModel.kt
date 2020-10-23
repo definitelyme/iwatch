@@ -1,4 +1,4 @@
-package org.health17.iwatch.ui.main.mobile_verification
+package org.health17.iwatch.fragments.mobile_verification
 
 import androidx.lifecycle.ViewModel
 
