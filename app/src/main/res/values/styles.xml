@@ -13,6 +13,10 @@
 
         <!-- This kinda acts like a SafeArea Widget for Native Android -->
         <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
+
+        <!-- Updates to the new font -->
+        <item name="android:fontFamily">@font/mont_regular</item>
+
     </style>
 
     <!-- Material Theme -->
@@ -29,6 +33,11 @@
 
         <!-- This kinda acts like a SafeArea for Native Android -->
         <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
 </resources>

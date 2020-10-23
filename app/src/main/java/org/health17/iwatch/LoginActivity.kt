@@ -33,5 +33,10 @@ class LoginActivity : AppCompatActivity() {
         google_signin_button_id.setOnClickListener {
             Log.d("TAG", "onCreate: Sign in with Google")
         }
+
+        sign_in_forgotPassword_id.setOnClickListener {
+            val intent = Intent(this, PasswordResetActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

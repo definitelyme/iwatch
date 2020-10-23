@@ -23,8 +23,12 @@
         <activity android:name=".MainActivity" />
 
         <activity android:name=".LoginActivity" />
-
+      
         <activity android:name=".SignUpActivity" />
+      
+        <activity android:name=".VerificationActivity" />
+      
+        <activity android:name=".PasswordResetActivity" />
     </application>
 
 </manifest>
