@@ -32,4 +32,20 @@
     <string name="oauth_google_string">Continue with Google</string>
     <string name="oauth_facebook_string">Continue with Facebook</string>
     <!-- Auth String [END] -->
+
+    <!-- Verification String [START] -->
+    <string name="mobile_verification">Mobile Verification</string>
+    <string name="email_verification">Email Verification</string>
+    <string name="email_placeholder">johndoe@email.com</string>
+    <string name="mobile_placeholder">Phone Number</string>
+    <string name="get_code">Get Code</string>
+    <string name="verification_string">Verification</string>
+    <string name="please_enter_the_received_code">Please, enter the received code.</string>
+    <string name="password_reset">Password Reset</string>
+    <string name="confirm_string">Confirm</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="title_activity_password_reset">PasswordResetActivity</string>
+    <!-- Verification String [END] -->
+
 </resources>
