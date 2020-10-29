@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/MaterialTheme"
+
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- Pill -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/pill_imageView"
+                                android:layout_width="150dp"
+                                android:layout_height="116dp"
+                                android:layout_marginBottom="8dp"
+                                android:foregroundGravity="center"
+                                app:layout_constraintBottom_toTopOf="@id/left"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.522"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_calendar" />
+
+                            <LinearLayout
+                                android:id="@+id/left"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="61dp"
+                                android:layout_marginBottom="8dp"
+                                android:orientation="vertical"
+                                android:padding="16dp"
+                                app:layout_constraintBottom_toTopOf="@+id/calendarView"
+                                app:layout_constraintEnd_toStartOf="@+id/right"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/pill_imageView">
+
+                                <!-- Title, secondary and supporting text -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pill Name"
+                                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Amount:"
+                                    android:textAppearance="?attr/textAppearanceBody2"
+                                    android:textColor="?android:attr/textColorSecondary" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="16dp"
+                                    android:text="1 pill/day"
+                                    android:textAppearance="?attr/textAppearanceBody2"
+                                    android:textColor="?android:attr/textColorSecondary" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/right"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginBottom="8dp"
+                                android:orientation="vertical"
+                                android:padding="16dp"
+                                app:layout_constraintBottom_toTopOf="@+id/calendarView"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.536"
+                                app:layout_constraintStart_toEndOf="@+id/left"
+                                app:layout_constraintTop_toBottomOf="@id/pill_imageView">
+
+                                <!-- Title, secondary and supporting text -->
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10 am"
+                                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="This month:"
+                                    android:textAppearance="?attr/textAppearanceBody2"
+                                    android:textColor="?android:attr/textColorSecondary" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="16dp"
+                                    android:text="1/1 taken"
+                                    android:textAppearance="?attr/textAppearanceBody2"
+                                    android:textColor="?android:attr/textColorSecondary" />
+
+                            </LinearLayout>
+
+                            <CalendarView
+                                android:id="@+id/calendarView"
+                                android:layout_width="391dp"
+                                android:layout_height="298dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                app:layout_constraintBottom_toTopOf="@+id/reschedule"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/right" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/reschedule"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="128dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/button_right_rounded_corners"
+                                android:text="Reschedule"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
