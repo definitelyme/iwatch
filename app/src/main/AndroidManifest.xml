@@ -12,7 +12,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".OnBoardingActivity"
             android:theme="@style/MaterialTheme">
@@ -42,6 +41,11 @@
         <activity
             android:name=".PasswordResetActivity"
             android:theme="@style/FullScreenWithStatusBar" />
+
+        <activity android:name=".Settings" />
+
+        <!--made activity pill-month launcher-->
+        <activity android:name=".PillMonth" />
     </application>
 
 </manifest>
