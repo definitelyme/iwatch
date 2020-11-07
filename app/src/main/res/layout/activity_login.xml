@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="org.health17.iwatch.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <Button
+            android:id="@+id/navigate_signup_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_transparent_rounded_corners"
+            android:freezesText="true"
+            android:text="@string/sign_up____string"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_18"
+            android:tooltipText="@string/create_free_account_string"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/left_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/right_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:freezesText="true"
+            android:text="@string/sign_in_string"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_25"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/email_constraintLayout"
+            app:layout_constraintStart_toStartOf="@id/left_guideline" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/email_constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:theme="@style/MaterialTheme"
+            app:layout_constraintBottom_toTopOf="@id/password_constraintLayout"
+            app:layout_constraintEnd_toEndOf="@id/right_guideline"
+            app:layout_constraintStart_toStartOf="@id/left_guideline">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_text_input_layout_id"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_hint_string"
+                app:boxBackgroundColor="@color/transparent"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_12"
+                app:boxCornerRadiusTopStart="@dimen/dimen_12"
+                app:endIconContentDescription="@string/email_hint_string"
+                app:errorEnabled="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sign_in_email_editText_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50"
+                    android:autoSizeMaxTextSize="@dimen/font_25"
+                    android:autoSizeMinTextSize="@dimen/font_19"
+                    android:elevation="@dimen/dimen_0"
+                    android:freezesText="true"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/font_17"
+                    tools:targetApi="o" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/password_constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/MaterialTheme"
+            app:layout_constraintBottom_toTopOf="@id/sign_in_forgotPassword_id"
+            app:layout_constraintEnd_toEndOf="@id/right_guideline"
+            app:layout_constraintStart_toStartOf="@id/left_guideline">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_text_input_layout_id"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_hint_string"
+                app:boxBackgroundColor="@color/transparent"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_12"
+                app:boxCornerRadiusTopStart="@dimen/dimen_12"
+                app:endIconContentDescription="@string/password_hint_string"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/colorPrimary"
+                app:errorEnabled="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sign_in_password_editText_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50"
+                    android:autoSizeMaxTextSize="@dimen/font_25"
+                    android:autoSizeMinTextSize="@dimen/font_19"
+                    android:elevation="@dimen/dimen_0"
+                    android:freezesText="true"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/font_17"
+                    tools:targetApi="o" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/sign_in_forgotPassword_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_50"
+            android:background="@drawable/button_ripple"
+            android:freezesText="true"
+            android:text="@string/forgot_password_string"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/facebook_signin_button_id"
+            app:layout_constraintRight_toRightOf="@id/right_guideline" />
+
+        <TextView
+            android:id="@+id/sign_in_alt_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:freezesText="true"
+            android:text="@string/sign_in_alt_string"
+            android:textAllCaps="false"
+            android:textColor="@color/darker_gray"
+            android:textSize="@dimen/font_20"
+            app:layout_constraintBottom_toBottomOf="@+id/facebook_signin_button_id"
+            app:layout_constraintEnd_toStartOf="@+id/facebook_signin_button_id"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/left_guideline"
+            app:layout_constraintTop_toTopOf="@+id/facebook_signin_button_id" />
+
+        <ImageButton
+            android:id="@+id/facebook_signin_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/facebook_rounded_button"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/dimen_10"
+            android:src="@drawable/ic_facebook"
+            app:layout_constraintBottom_toBottomOf="@+id/google_signin_button_id"
+            app:layout_constraintEnd_toStartOf="@+id/google_signin_button_id"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/sign_in_alt_textView_id"
+            app:layout_constraintTop_toTopOf="@+id/google_signin_button_id" />
+
+        <ImageButton
+            android:id="@+id/google_signin_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_29"
+            android:background="@drawable/google_rounded_button"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/dimen_10"
+            android:src="@drawable/ic_google"
+            app:layout_constraintBottom_toTopOf="@+id/login_button_id"
+            app:layout_constraintEnd_toStartOf="@+id/right_guideline"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/facebook_signin_button_id" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/button_guideline_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <Button
+            android:id="@+id/login_button_id"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_45"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:background="@drawable/button_right_rounded_corners"
+            android:elevation="@dimen/dimen_0"
+            android:freezesText="true"
+            android:text="@string/log_in_string"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/button_guideline_id" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

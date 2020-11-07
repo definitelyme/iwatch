@@ -1,3 +1,70 @@
 <resources>
     <string name="app_name">MediPlan</string>
+
+    <string name="image_description">Image description</string>
+
+    <!-- On boarding strings -->
+    <string name="on_boarding_heading_1">Be on time and on track</string>
+    <string name="on_boarding_description_1">With mediplan app get a chance to plan your pill taking schedule and ensure you are both on time and never miss your prescriptions</string>
+    <string name="on_boarding_heading_2">A whole team of doctors at your disposal</string>
+    <string name="on_boarding_heading_3">Knowldege is power</string>
+    <string name="on_boarding_heading_4">Buys Meds Online</string>
+    <string name="on_boarding_description_2">Mediplan gives you the opportunity to get free consultation from research done by a big team of qualified doctors</string>
+    <string name="on_boarding_description_3">With the correct information regarding your problem you can protect yourself against major diseases</string>
+    <string name="on_boarding_description_4">With a number of pharmacy also available you can order your prescriptions directly from the app</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get Started</string>
+    <string name="next">Next</string>
+    <string name="onboarding_image">OnBoarding Image</string>
+
+    <!-- Auth String [START] -->
+    <string name="sign_up_string">Sign Up</string>
+    <string name="sign_up____string">New here? Sign Up</string>
+    <string name="sign_in_string">Sign In</string>
+    <string name="log_in_string">Log In</string>
+    <string name="create_free_account_string">Create a free account</string>
+    <string name="have_an_account_string">Have an account?</string>
+    <string name="sign_in_alt_string">Or sign in with: </string>
+    <string name="sign_up_alt_string">Or sign up with: </string>
+    <string name="name_hint_string">Full Name</string>
+    <string name="example_name_string">John Doe</string>
+    <string name="email_hint_string">Email</string>
+    <string name="example_email_string">name@email.com</string>
+    <string name="password_hint_string">Password</string>
+    <string name="example_password_string">secret</string>
+    <string name="forgot_password_string">Forgot Password?</string>
+    <string name="oauth_google_string">Continue with Google</string>
+    <string name="oauth_facebook_string">Continue with Facebook</string>
+    <!-- Auth String [END] -->
+
+    <!-- Verification String [START] -->
+    <string name="mobile_verification">Mobile Verification</string>
+    <string name="email_verification">Email Verification</string>
+    <string name="email_placeholder">johndoe@email.com</string>
+    <string name="mobile_placeholder">Phone Number</string>
+    <string name="get_code">Get Code</string>
+    <string name="verification_string">Verification</string>
+    <string name="please_enter_the_received_code">Please, enter the received code.</string>
+    <string name="password_reset">Password Reset</string>
+    <string name="confirm_string">Confirm</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="title_activity_password_reset">PasswordResetActivity</string>
+    <!-- Verification String [END] -->
+
+    <!-- Home String [START] -->
+    <string name="background_image_description">Background image</string>
+    <string name="_10_am__time_string">10 am</string>
+    <string name="treatment_image_semantics">Treatment Image</string>
+    <string name="drug_string">Antenolol</string>
+    <string name="presription_string">1 pill/day</string>
+    <string name="sidebar_home_string">Home</string>
+    <string name="sidebar_calendar_string">Calendar</string>
+    <string name="sidebar_programs_string">Programs</string>
+    <string name="sidebar_settings_string">Settings</string>
+    <string name="sidebar_help_string">Help</string>
+    <string name="sidebar_log_out_string">Log Out</string>
+    <!-- Home String [END] -->
+
+    <!-- For Testing -->
 </resources>

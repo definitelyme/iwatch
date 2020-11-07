@@ -1,6 +1,6 @@
-# iWatch
+# MediPlan
 
-Android project for iWatch-mobile
+Android project for MediPlan-mobile
 
 ## Getting Started
 

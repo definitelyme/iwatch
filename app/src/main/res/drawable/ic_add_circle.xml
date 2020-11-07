@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+
+    <!--Set the Background Image-->
+    <item android:gravity="center">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorPrimary" />
+            <corners android:radius="@dimen/dimen_500" />
+            <padding
+                android:bottom="@dimen/dimen_10"
+                android:left="@dimen/dimen_10"
+                android:right="@dimen/dimen_10"
+                android:top="@dimen/dimen_10" />
+        </shape>
+    </item>
+
+    <item android:gravity="center">
+        <bitmap
+            android:filter="false"
+            android:src="@drawable/add_image" />
+    </item>
+</layer-list>
