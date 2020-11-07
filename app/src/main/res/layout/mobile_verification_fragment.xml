@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.mobile_verification.MobileVerificationFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:theme="@style/MaterialTheme"
+        app:layout_constraintEnd_toEndOf="@id/right_guideline"
+        app:layout_constraintStart_toStartOf="@id/left_guideline"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reset_phone_input_layout_id"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile_placeholder"
+            app:boxBackgroundColor="@color/transparent"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_12"
+            app:boxCornerRadiusTopStart="@dimen/dimen_12"
+            app:endIconContentDescription="@string/email_hint_string"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reset_phone__id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:autoSizeMaxTextSize="@dimen/font_25"
+                android:autoSizeMinTextSize="@dimen/font_19"
+                android:elevation="@dimen/dimen_0"
+                android:freezesText="true"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="@dimen/font_17"
+                tools:targetApi="o" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/get_code_button_guideline_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <Button
+        android:id="@+id/get_code_button_id"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_45"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:background="@drawable/button_right_rounded_corners"
+        android:elevation="@dimen/dimen_0"
+        android:freezesText="true"
+        android:text="@string/get_code"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_17"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/get_code_button_guideline_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
