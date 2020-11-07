@@ -44,6 +44,14 @@
 
     </style>
 
+    <style name="MainActivityStyle" parent="FullScreenWithStatusBar">
+        <item name="android:statusBarColor">@color/gray100</item>
+
+        <item name="colorNavigationItem">@color/menu_item_color_state</item>
+        <item name="colorNavigationItemSelected">@color/white</item>
+        <item name="drawableNavigationItemBackground">@drawable/sidebar_background_color_state</item>
+    </style>
+
     <style name="AppTheme.NoActionBar" parent="AppTheme">
 
         <item name="windowNoTitle">true</item>
@@ -54,5 +62,12 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- SideBar Themes -->
+    <style name="SideBarTheme" parent="Widget.Design.NavigationView">
+        <item name="itemIconTint">?attr/colorNavigationItem</item>
+        <item name="itemTextColor">?attr/colorNavigationItem</item>
+        <item name="itemBackground">?attr/drawableNavigationItemBackground</item>
+    </style>
 
 </resources>
