@@ -36,6 +36,9 @@
         <activity
             android:name=".PasswordResetActivity"
             android:theme="@style/FullScreenWithStatusBar" />
+      
+        <!--made activity pill-month launcher-->
+        <activity android:name=".PillMonth" />
     </application>
 
 </manifest>
