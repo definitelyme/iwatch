@@ -52,7 +52,6 @@
             android:layout_marginStart="@dimen/dimen_12"
             android:text="janedoe@email.com"
             android:textSize="@dimen/font_15"
-            app:layout_constraintEnd_toEndOf="@id/side_nav_profile_name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/side_nav_profile_name" />
     </androidx.constraintlayout.widget.ConstraintLayout>

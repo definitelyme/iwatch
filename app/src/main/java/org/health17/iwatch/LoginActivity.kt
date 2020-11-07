@@ -18,7 +18,8 @@ class LoginActivity : AppCompatActivity() {
         }
 
         login_button_id.setOnClickListener {
-            Log.d("TAG", "onCreate: Login as returning User")
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
 
         facebook_signin_button_id.setOnClickListener {

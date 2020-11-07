@@ -14,8 +14,8 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/MainActivityStyle">
+            android:name=".OnBoardingActivity"
+            android:theme="@style/MaterialTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,8 +24,8 @@
         </activity>
 
         <activity
-            android:name=".OnBoardingActivity"
-            android:theme="@style/MaterialTheme" />
+            android:name=".MainActivity"
+            android:theme="@style/MainActivityStyle" />
 
         <activity
             android:name=".LoginActivity"
