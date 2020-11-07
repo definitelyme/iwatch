@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/sidebar__menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/sidebar_nav_home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="@string/sidebar_home_string" />
+
+        <item
+            android:id="@+id/sidebar_nav_calendar"
+            android:icon="@drawable/ic_nav_calendar"
+            android:title="@string/sidebar_calendar_string" />
+
+        <item
+            android:id="@+id/sidebar_nav_meds"
+            android:icon="@drawable/ic_nav_meds"
+            android:title="@string/sidebar_programs_string" />
+    </group>
+
+    <group
+        android:id="@+id/sidebar__menu_bottom"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/sidebar_nav_settings"
+            android:icon="@drawable/ic_nav_cog"
+            android:title="@string/sidebar_settings_string" />
+
+        <item
+            android:id="@+id/sidebar_nav_help"
+            android:icon="@drawable/ic_nav_help"
+            android:title="@string/sidebar_help_string" />
+
+        <item
+            android:id="@+id/sidebar_nav_logout"
+            android:icon="@drawable/ic_nav_logout"
+            android:title="@string/sidebar_log_out_string" />
+    </group>
+</menu>

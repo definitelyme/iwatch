@@ -11,5 +11,7 @@
     <color name="black">#000000</color>
     <color name="black70">#C9000000</color>
     <color name="darker_gray">@android:color/darker_gray</color>
+    <color name="gray50">#eeeeee</color>
+    <color name="gray100">#ecf3fe</color>
     <color name="facebook">#1976D2</color>
 </resources>

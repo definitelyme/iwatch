@@ -19,7 +19,8 @@ class SignUpActivity : AppCompatActivity() {
         }
 
         signup_button_id.setOnClickListener {
-            Log.d("TAG", "onCreate: Create your free account")
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
 
         facebook_signup_button_id.setOnClickListener {

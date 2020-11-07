@@ -1,18 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sidebar_nav_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/image_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.6" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/rounded_layout_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.45" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="@dimen/dimen_0"
+                android:background="@color/gray100"
+                android:contentDescription="@string/background_image_description"
+                android:scaleType="centerInside"
+                android:src="@drawable/family_2"
+                app:layout_constraintBottom_toBottomOf="@id/image_guideline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/sidebar_menu_button"
+                android:layout_width="@dimen/dimen_43"
+                android:layout_height="@dimen/dimen_43"
+                android:layout_marginStart="@dimen/dimen_6"
+                android:contentDescription="@string/image_description"
+                android:paddingStart="@dimen/dimen_15"
+                android:paddingTop="@dimen/dimen_15"
+                android:paddingEnd="@dimen/dimen_15"
+                android:paddingBottom="@dimen/dimen_15"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0"
+                android:background="@drawable/main_activity_layout_round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rounded_layout_guideline">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/main_activity_top_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.05" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/main_activity_left_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/main_activity_right_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.95" />
+
+                <TextView
+                    android:id="@+id/main_act_greeting_txtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:paddingStart="@dimen/dimen_0"
+                    android:paddingEnd="@dimen/dimen_5"
+                    android:text="Hi,"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_24"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/main_activity_left_guideline"
+                    app:layout_constraintTop_toBottomOf="@id/main_activity_top_guideline" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:text="Brendan!"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_24"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/main_act_greeting_txtView"
+                    app:layout_constraintStart_toEndOf="@id/main_act_greeting_txtView"
+                    app:layout_constraintTop_toTopOf="@id/main_act_greeting_txtView" />
+
+                <TextView
+                    android:id="@+id/today_prescription_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:freezesText="true"
+                    android:text="Today you take 3 pills"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_17"
+                    app:layout_constraintStart_toStartOf="@id/main_activity_left_guideline"
+                    app:layout_constraintTop_toBottomOf="@id/main_act_greeting_txtView" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/new_treatment_button_layout"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/MaterialTheme"
+                    app:layout_constraintBottom_toTopOf="@id/main_act_treatment_recyclerView"
+                    app:layout_constraintEnd_toEndOf="@id/main_activity_right_guideline"
+                    app:layout_constraintStart_toStartOf="@id/main_activity_left_guideline"
+                    app:layout_constraintTop_toBottomOf="@id/today_prescription_id">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/new_treatment_button_id"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_60"
+                        android:layout_marginTop="@dimen/dimen_30"
+                        android:layout_marginBottom="@dimen/dimen_30"
+                        android:elevation="@dimen/dimen_0"
+                        android:freezesText="true"
+                        android:text="Add New Treatment"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_18"
+                        android:textStyle="bold"
+                        app:backgroundTint="@color/gray100"
+                        app:cornerRadius="@dimen/dimen_10"
+                        app:elevation="@dimen/dimen_1"
+                        app:icon="@drawable/ic_add_circle"
+                        app:iconTint="@color/transparent"
+                        app:iconTintMode="add"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/main_act_treatment_recyclerView"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dimen_80"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/main_activity_left_guideline"
+                    app:layout_constraintTop_toBottomOf="@id/new_treatment_button_layout"
+                    tools:itemCount="4"
+                    tools:listitem="@layout/recyclerview_main_activity" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/sidebar_navigation_view"
+        style="@style/SideBarTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:backgroundTint="@color/gray100"
+        android:clipToPadding="false"
+        app:headerLayout="@layout/sidebar_header"
+        app:menu="@menu/sidebar_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

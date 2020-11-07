@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">MediPlan</string>
+
+    <string name="image_description">Image description</string>
+
+    <!-- On boarding strings -->
     <string name="on_boarding_heading_1">Be on time and on track</string>
     <string name="on_boarding_description_1">With mediplan app get a chance to plan your pill taking schedule and ensure you are both on time and never miss your prescriptions</string>
     <string name="on_boarding_heading_2">A whole team of doctors at your disposal</string>
@@ -48,4 +52,19 @@
     <string name="title_activity_password_reset">PasswordResetActivity</string>
     <!-- Verification String [END] -->
 
+    <!-- Home String [START] -->
+    <string name="background_image_description">Background image</string>
+    <string name="_10_am__time_string">10 am</string>
+    <string name="treatment_image_semantics">Treatment Image</string>
+    <string name="drug_string">Antenolol</string>
+    <string name="presription_string">1 pill/day</string>
+    <string name="sidebar_home_string">Home</string>
+    <string name="sidebar_calendar_string">Calendar</string>
+    <string name="sidebar_programs_string">Programs</string>
+    <string name="sidebar_settings_string">Settings</string>
+    <string name="sidebar_help_string">Help</string>
+    <string name="sidebar_log_out_string">Log Out</string>
+    <!-- Home String [END] -->
+
+    <!-- For Testing -->
 </resources>

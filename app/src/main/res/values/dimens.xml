@@ -54,6 +54,8 @@
     <dimen name="dimen_38">38dp</dimen>
     <dimen name="dimen_39">39dp</dimen>
     <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_42">42dp</dimen>
+    <dimen name="dimen_43">43dp</dimen>
     <dimen name="dimen_45">45dp</dimen>
     <dimen name="dimen_50">50dp</dimen>
     <dimen name="dimen_55">55dp</dimen>
@@ -132,7 +134,6 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="dimen_53">53dp</dimen>
     <dimen name="dimen_52">52dp</dimen>
-    <dimen name="dimen_42">42dp</dimen>
     <dimen name="dimen_9">9dp</dimen>
     <dimen name="dimen_48">48dp</dimen>
     <dimen name="dimen_49">49dp</dimen>

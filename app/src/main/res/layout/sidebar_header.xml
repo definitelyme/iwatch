@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sidebar_nav_cardview"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_15"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="@dimen/dimen_100"
+        app:cardElevation="@dimen/dimen_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/sidebar_nav_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_description"
+            android:scaleType="centerInside"
+            android:src="@drawable/anonymous" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/sidebar_nav_cardview"
+        app:layout_constraintStart_toEndOf="@id/sidebar_nav_cardview"
+        app:layout_constraintTop_toTopOf="@id/sidebar_nav_cardview">
+
+        <TextView
+            android:id="@+id/side_nav_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:text="Martha Mwangi"
+            android:textColor="@color/black70"
+            android:textSize="@dimen/font_22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/side_nav_profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:text="janedoe@email.com"
+            android:textSize="@dimen/font_15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/side_nav_profile_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
