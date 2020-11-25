@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/gray100"
+    app:cardCornerRadius="@dimen/dimen_12"
+    app:cardElevation="@dimen/dimen_1"
+    app:cardMaxElevation="@dimen/dimen_1"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/dimen_8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/dimen_140"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/treatment_recyclerView_mid_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/treatment_recyclerView_image_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/treatment_time_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:freezesText="true"
+            android:text="@string/_10_am__time_string"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_18"
+            app:layout_constraintBottom_toTopOf="@id/treatment_image_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <ImageView
+            android:id="@+id/treatment_image_id"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/dimen_60"
+            android:contentDescription="@string/treatment_image_semantics"
+            android:scaleType="fitCenter"
+            android:src="@drawable/medicine"
+            app:layout_constraintBottom_toTopOf="@id/treatment_name_id"
+            app:layout_constraintEnd_toEndOf="@id/treatment_recyclerView_mid_guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/treatment_time_id"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/treatment_name_id"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/drug_string"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_22"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/treatment_prescription_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/treatment_image_id"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/treatment_prescription_id"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:text="@string/presription_string"
+            android:textAllCaps="false"
+            android:textSize="@dimen/font_15"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/new_treatment_button_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/treatment_name_id"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <ImageButton
+            android:id="@+id/new_treatment_button_id"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circular_white_icon_button"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/treatment_prescription_id"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintVertical_chainStyle="spread" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

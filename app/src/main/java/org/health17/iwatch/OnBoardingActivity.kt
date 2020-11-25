@@ -1,13 +1,13 @@
 package org.health17.iwatch
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Html
 import android.view.View
 import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_on_boarding.*
 
@@ -87,7 +87,7 @@ class OnBoardingActivity : AppCompatActivity() {
 
 
     fun skip(view: View) {
-        startActivity(Intent(applicationContext, MainActivity::class.java))
+        startActivity(Intent(applicationContext, LoginActivity::class.java))
         finish()
     }
 
