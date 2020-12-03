@@ -64,6 +64,32 @@
     <string name="sidebar_settings_string">Settings</string>
     <string name="sidebar_help_string">Help</string>
     <string name="sidebar_log_out_string">Log Out</string>
+    <string name="success">Success!</string>
+    <string name="you_ve_created_a_new_treatment">You\'ve created a New Treatment</string>
+    <string name="ok_great">Ok, Great</string>
+    <string name="muscle_pain_gel">Muscle Pain Gel</string>
+    <string name="duration">Duration :</string>
+    <string name="program">Program :</string>
+    <string name="duration_value">1 Month</string>
+    <string name="program_value">once/day</string>
+    <string name="add_new_treatment">Add</string>
+    <string name="new_treatment">New Treatment</string>
+    <string name="treatment_name">Name</string>
+    <string name="add_an_image">Add an image</string>
+    <string name="treatment_amount">Amount</string>
+    <string name="treatment_frequency">Frequency</string>
+    <string name="treatment_time">Time</string>
+    <string name="treatment_duration">Duration</string>
+    <string name="treatment_type">Type</string>
+    <string name="change_avatar">Change Avatar</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="city">City</string>
+    <string name="update">Update</string>
+    <string name="notifications">Notifications</string>
+    <string name="receive_notifications">Receive Notifications</string>
+    <string name="sound_notifications">Sound Notifications</string>
     <!-- Home String [END] -->
 
     <!-- For Testing -->

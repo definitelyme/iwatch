@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".OnBoardingActivity"
             android:theme="@style/MaterialTheme">
@@ -21,31 +22,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:theme="@style/MainActivityStyle" />
-
         <activity
             android:name=".LoginActivity"
             android:theme="@style/FullScreenWithStatusBar" />
-
         <activity
             android:name=".SignUpActivity"
             android:theme="@style/FullScreenWithStatusBar" />
-
         <activity
             android:name=".VerificationActivity"
             android:theme="@style/FullScreenWithStatusBar" />
-
         <activity
             android:name=".PasswordResetActivity"
             android:theme="@style/FullScreenWithStatusBar" />
-
-        <activity android:name=".Settings" />
-
-        <!--made activity pill-month launcher-->
+        <activity
+            android:name=".Settings"
+            android:theme="@style/FullScreenWithStatusBar" /> <!-- made activity pill-month launcher -->
         <activity android:name=".PillMonth" />
+        <activity
+            android:name=".NewTreatmentActivity"
+            android:theme="@style/FullScreenWithStatusBar" />
+        <activity
+            android:name=".PersonalInfoActivity"
+            android:theme="@style/FullScreenWithStatusBar" />
+        <activity
+            android:name=".NotificationSettingsActivity"
+            android:theme="@style/FullScreenWithStatusBar" />
     </application>
 
 </manifest>
