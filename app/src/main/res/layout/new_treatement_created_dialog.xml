@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:text="@string/success"
+        android:textColor="@color/colorPrimary"
+        android:padding="@dimen/dimen_15"
+        android:textSize="@dimen/font_17"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/declaration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_30"
+        android:text="@string/you_ve_created_a_new_treatment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_17"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/success"
+        tools:layout_editor_absoluteX="172dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:padding="@dimen/dimen_15"
+        app:layout_constraintBottom_toTopOf="@+id/ok_great"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/declaration">
+
+        <ImageView
+            android:id="@+id/medicineImageView"
+            android:layout_width="@dimen/dimen_90"
+            android:layout_height="@dimen/dimen_90"
+            android:padding="@dimen/dimen_10"
+            android:background="@drawable/medicine_imageview_rounded_bg"
+            tools:srcCompat="@drawable/pill" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/treatment_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/muscle_pain_gel"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_17"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dimen_5">
+
+                <TextView
+                    android:id="@+id/treatment_program"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/program"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/treatment_program_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/program_value"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dimen_5">
+
+                <TextView
+                    android:id="@+id/treatment_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/duration"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/treatment_duration_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/duration_value"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/get_code_button_guideline_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <Button
+        android:id="@+id/ok_great"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_45"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:background="@drawable/button_right_rounded_corners"
+        android:elevation="@dimen/dimen_0"
+        android:freezesText="true"
+        android:text="@string/ok_great"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_17"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/get_code_button_guideline_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

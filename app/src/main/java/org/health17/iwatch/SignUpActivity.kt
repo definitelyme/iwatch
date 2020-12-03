@@ -20,7 +20,6 @@ class SignUpActivity : AppCompatActivity() {
 
         signup_button_id.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
-            finish()
         }
 
         facebook_signup_button_id.setOnClickListener {

@@ -1,5 +1,6 @@
 package org.health17.iwatch
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +8,7 @@ import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.navigation.NavigationView
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_main.*
 import org.health17.iwatch.adapters.TreatmentRecyclerAdapter
 import org.health17.iwatch.models.treatment.Treatment
@@ -27,6 +29,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         sidebar_menu_button.setOnClickListener { sidebar_nav_drawer.openDrawer(GravityCompat.START) }
         sidebar_navigation_view.setNavigationItemSelectedListener(this)
         sidebar_navigation_view.setCheckedItem(R.id.sidebar_nav_home)
+
+        new_treatment_button_id.setOnClickListener {
+            startActivity(Intent(this, NewTreatmentActivity::class.java))
+        }
     }
 
     override fun onBackPressed() {
@@ -41,9 +47,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.sidebar_nav_home -> println("Hello Home view")
             R.id.sidebar_nav_calendar -> println("Calendar clicked")
             R.id.sidebar_nav_meds -> println("Programs clicked")
-            R.id.sidebar_nav_settings -> println("Settings clicked")
+            R.id.sidebar_nav_settings -> startActivity(Intent(this, Settings::class.java))
             R.id.sidebar_nav_help -> println("Help button clicked")
-            R.id.sidebar_nav_logout -> println("User about to Logout")
+            R.id.sidebar_nav_logout -> finish()
         }
         sidebar_nav_drawer.closeDrawer(GravityCompat.START)
         return true

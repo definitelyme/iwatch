@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray100"
+    android:fillViewport="true"
+    tools:context=".NewTreatmentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="@dimen/dimen_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dimen_15"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/new_treatment"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_20"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/bellImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dimen_15"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_notifications_none_24" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray100"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray100"
+            android:theme="@style/MaterialTheme">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/new_treatment_button_id"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/dimen_0"
+                android:freezesText="true"
+                android:text="@string/add_an_image"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_18"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/dimen_10"
+                app:elevation="@dimen/dimen_1"
+                app:icon="@drawable/ic_add_circle"
+                app:iconSize="@dimen/dimen_50"
+                app:iconTint="@color/transparent"
+                app:iconTintMode="add"
+                app:layout_constraintBottom_toTopOf="@id/rounded_layout_guideline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/rounded_layout_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.20" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/activity_layout_round"
+                android:theme="@style/MaterialTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rounded_layout_guideline">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/activity_top_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.05" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/left_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.1" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/right_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.9" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/treatment_name_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/treatment_name"
+                    app:boxBackgroundColor="@color/transparent"
+                    app:boxCornerRadiusTopEnd="@dimen/dimen_12"
+                    app:boxCornerRadiusTopStart="@dimen/dimen_12"
+                    app:endIconContentDescription="Treatment Name"
+                    app:errorEnabled="true"
+                    app:layout_constraintBottom_toTopOf="@+id/treatment_icons_recyclerView"
+                    app:layout_constraintEnd_toEndOf="@+id/right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/activity_top_guideline">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/treatment_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50"
+                        android:autoSizeMaxTextSize="@dimen/font_25"
+                        android:autoSizeMinTextSize="@dimen/font_19"
+                        android:elevation="@dimen/dimen_0"
+                        android:freezesText="true"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="@dimen/font_17"
+                        tools:targetApi="o" />
+
+                    <TextView
+                        android:id="@+id/treatment_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/treatment_type"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="@dimen/font_17"
+                        app:layout_constraintBottom_toTopOf="@+id/treatment_icons_recyclerView" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/treatment_icons_recyclerView"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toTopOf="@+id/linear_layout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                    tools:itemCount="6"
+                    tools:listitem="@layout/recyclerview_add_treatement_activity" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/time_layout"
+                    app:layout_constraintEnd_toEndOf="@+id/right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/left_guideline"
+                    android:baselineAligned="false">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/amount_layout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/treatment_amount"
+                        app:boxBackgroundColor="@color/transparent"
+                        app:boxCornerRadiusTopEnd="@dimen/dimen_12"
+                        app:boxCornerRadiusTopStart="@dimen/dimen_12"
+                        app:endIconContentDescription="Treatment Amount"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/treatment_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_50"
+                            android:autoSizeMaxTextSize="@dimen/font_25"
+                            android:autoSizeMinTextSize="@dimen/font_19"
+                            android:elevation="@dimen/dimen_0"
+                            android:freezesText="true"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textSize="@dimen/font_17"
+                            tools:targetApi="o" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/frequency_layout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/treatment_frequency"
+                        app:boxBackgroundColor="@color/transparent"
+                        app:boxCornerRadiusTopEnd="@dimen/dimen_12"
+                        app:boxCornerRadiusTopStart="@dimen/dimen_12"
+                        app:endIconContentDescription="Treatment Frequency"
+                        app:errorEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/treatment_frequency"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_50"
+                            android:autoSizeMaxTextSize="@dimen/font_25"
+                            android:autoSizeMinTextSize="@dimen/font_19"
+                            android:elevation="@dimen/dimen_0"
+                            android:freezesText="true"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:textSize="@dimen/font_17"
+                            tools:targetApi="o" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/time_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/treatment_time"
+                    app:boxBackgroundColor="@color/transparent"
+                    app:boxCornerRadiusTopEnd="@dimen/dimen_12"
+                    app:boxCornerRadiusTopStart="@dimen/dimen_12"
+                    app:endIconContentDescription="Treatment Time"
+                    app:endIconDrawable="@drawable/ic_baseline_access_time_24"
+                    app:endIconMode="custom"
+                    app:endIconTint="@color/colorPrimary"
+                    app:errorEnabled="true"
+                    app:layout_constraintBottom_toTopOf="@+id/duration_layout"
+                    app:layout_constraintEnd_toEndOf="@+id/right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/left_guideline">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/treatment_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50"
+                        android:autoSizeMaxTextSize="@dimen/font_25"
+                        android:autoSizeMinTextSize="@dimen/font_19"
+                        android:elevation="@dimen/dimen_0"
+                        android:freezesText="true"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="@dimen/font_17"
+                        tools:targetApi="o" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/duration_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/treatment_duration"
+                    app:boxBackgroundColor="@color/transparent"
+                    app:boxCornerRadiusTopEnd="@dimen/dimen_12"
+                    app:boxCornerRadiusTopStart="@dimen/dimen_12"
+                    app:endIconContentDescription="Treatment Duration"
+                    app:endIconDrawable="@drawable/ic_baseline_date_range_24"
+                    app:endIconMode="custom"
+                    app:endIconTint="@color/colorPrimary"
+                    app:errorEnabled="true"
+                    app:layout_constraintBottom_toTopOf="@+id/add_treatment_button_guideline_1"
+                    app:layout_constraintEnd_toEndOf="@+id/right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/left_guideline">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/treatment_duration"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50"
+                        android:autoSizeMaxTextSize="@dimen/font_25"
+                        android:autoSizeMinTextSize="@dimen/font_19"
+                        android:elevation="@dimen/dimen_0"
+                        android:freezesText="true"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="@dimen/font_17"
+                        tools:targetApi="o" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/add_treatment_button_guideline_1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.8" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/add_treatment_button_guideline_2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2" />
+
+                <Button
+                    android:id="@+id/add_new_treatment_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_right_rounded_corners"
+                    android:elevation="@dimen/dimen_0"
+                    android:freezesText="true"
+                    android:text="@string/add_new_treatment"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_17"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/add_treatment_button_guideline_2"
+                    app:layout_constraintTop_toBottomOf="@id/add_treatment_button_guideline_1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
